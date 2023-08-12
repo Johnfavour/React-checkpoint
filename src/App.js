@@ -1,5 +1,5 @@
 import React from 'react'
-import {CardGroup, Card , Nav, Navbar, Container} from 'react-bootstrap';
+import {CardGroup, Card , Nav, Navbar,Form, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
@@ -62,10 +62,24 @@ const App = () => {
         </Card.Footer>
       </Card>
     </CardGroup>
-
-    
     </div>
     </Container>
+    {/* Toggle switches using React Bootstrap Form.Check component*/}
+    <Form>
+      <Form.Check 
+        type="switch"
+        id="custom-switch"
+        label="Check this switch"
+      />
+      <Form.Check 
+        disabled
+        type="switch"
+        label="disabled switch"
+        id="disabled-custom-switch"
+      />
+    </Form>
+
+
     </div>
     </>
   )
