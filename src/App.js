@@ -6,6 +6,7 @@ const App = () => {
   return (
     <>
     <div className='App' style = {{backgroundImage: 'linear-gradient(to bottom, #efefef, brown, #ffffff)' }}>
+      {/* The navbar container */}
         <div className="navs">
         <Navbar bg="dark" data-bs-theme="dark">
           <Navbar.Brand href="#home" style = {{paddingLeft: '40px', fontSize: '50px'}}>Egonic</Navbar.Brand>
@@ -16,9 +17,11 @@ const App = () => {
           </Nav>
       </Navbar>
       </div>
+      {/* The header container */}
       <div className="Header" style ={{textAlign: 'center'}}>
       <Navbar.Brand href="#home" style = {{fontSize: '40px', fontWeight: '600'}}>React-Bootstrap</Navbar.Brand>
       </div>
+      {/* The card container */}
     <Container >
      <div className="card-container" style= {{margin: '60px'}}>
      <CardGroup>
